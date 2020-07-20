@@ -1,0 +1,8 @@
+<div class="container">
+    <button mat-flat-button color="warn" (click)="showHide()">{{isHidden?"Show":"Hide"}}</button>
+    <div *ngIf="isHidden">deneme</div>
+</div>
+
+<ul>
+    <li *ngFor="for let isimler of myArray" (click)="arrayFunctionu(isimler)">{{isimler}}</li>
+</ul>
